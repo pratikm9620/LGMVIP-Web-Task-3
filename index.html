@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <div class="page">
+      <div class="heading">
+         <h1>Student Registeration Form</h1>
+      </div>
+      <div class="container">
+         <div class="column">
+            <form autocomplete="off">
+               <div class="name">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" placeholder="Enter Your Name" required>
+               </div>
+               <div class="email">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" placeholder="Enter Your Email" required>
+               </div>
+               <div class="phone">
+                  <label for="phone">Phone:</label>
+                  <input type="phone" id="phone" placeholder="Enter your Phone No." required>
+               </div>
+               <div class=" image">
+                  <label for="url">Image:</label>
+                  <input type="url" id="url" placeholder="Enter Your Image URL" required>
+               </div>
+               <div class="gender">
+                  <label for="gender">Gender:</label>
+                  <span class="stext">
+                     <label for="male"><input type="radio" name="g" id="male" value="Male" required>Male</label>
+                     <label for="female"><input type="radio" name="g" id="female" value="Female" required>Female</label>
+                     <label for="other"><input type="radio" name="g" id="other" value="Other" required>Other</label>
+                  </span>
+               </div>
+               <div class="skills">
+                  <label for="skills">Skills:</label>
+                  <span class="stext">
+                     <label><input type="checkbox" value="HTML,CSS & JS" id="hcj" class="checkbox">HTML, CSS &
+                        JAVASCRIPT</label>
+                     <label><input type="checkbox" value="Python" id="python" class="checkbox">PYTHON</label>
+                     <label><input type="checkbox" value="Java" id="java" class="checkbox">Java</label>
+                     <label><input type="checkbox" value="Reactjs" id="reactjs" class="checkbox">Reactjs</label>
+                     <label><input type="checkbox" value="Nodejs" id="nodejs" class="checkbox">Nodejs</label>
+                  </span>
+               </div>
+               <div class="button">
+                  <button type="submit" id="submit">Register</button>
+                  <button type="reset" id="reset">Clear</button>
+               </div>
+            </form>
+         </div>
+         <div class="line"></div>
+         <div class="op-box">
+            <div class="result">
+               <h2>Registered Student Details</h2>
+               <div class="detailCard" id="detailCard">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
